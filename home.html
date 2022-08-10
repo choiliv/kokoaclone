@@ -11,34 +11,26 @@
           height: 1000vh;
           margin: 20px;
         }
-      span{
-        color: rgb(124, 28, 214);
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      input {
+        border: 1px solid wheat;
       }
-      p span {
-        color: white;
+      input:required{
+        border-color: tomato;
       }
-
-     body > span {
-      text-decoration: underline;
+      input[placeholder~="name"] {
+        background-color: pink;
       }
-     
-     span:first-child {
-      text-decoration: none;
-     }
-     
-  
+      input[placeholder="password"] {
+        background-color: wheat;
+      }
       
     </style>
     </head>
     <body>
-     <span>hello</span>
-     <p>적게 일하고 많이 버는 삶을 살고싶다.
-      <span>hihi</span>
-    </p>
-    <span>nice</span>
-    <span>I like working in my home</span>
+     <form>
+       <input type="text" placeholder="First name" />
+       <input type="text" placeholder="Last name" />
+       <input type="password" required placeholder="password" />
+     </form>
       </body>
       </html>
