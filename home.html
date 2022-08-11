@@ -7,26 +7,32 @@
         </title>
        <link href="style.css" rel="stylesheet" />
        <style>
+
+         :root{
+          --main-color:#fcce00;
+          --default-border: 1px solid var(--main-color);
+        }
+
         body{
           height: 1000vh;
           margin: 20px;
         }
-       form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+       p {
+          background-color: var(--main-color);
        }
-       form:hover input:focus{
-        background-color: sienna;
+       a {
+          color: var(--main-color);
+          border: var(--default-border);
        }
+
     </style>
     </head>
     <body>
-     <form >
-      <input type="text" name=""  id=""/>
-      <input type="text" name=""  id=""/>
-      <input type="text" name=""  id=""/>
-      </form>
+      <p>
+        재미있는 HTML, CSS
+      </p>
+     <div>
+      <a href="#">website</a>
+     </div>
       </body>
       </html>
