@@ -17,20 +17,23 @@
           height: 1000vh;
           margin: 20px;
         }
-       p {
-          background-color: var(--main-color);
-       }
        a {
-          color: var(--main-color);
-          border: var(--default-border);
+          background-color:tomato;
+          color: wheat;
+          text-decoration: none;
+          padding: 15px;
+          border-radius: 5px;
+          transition: background-color 3s ease-in-out,
+                      color 3s ease-in-out;
+       }
+       a:hover {
+          background-color:wheat;
+          color:tomato;
        }
 
     </style>
     </head>
     <body>
-      <p>
-        재미있는 HTML, CSS
-      </p>
      <div>
       <a href="#">website</a>
      </div>
