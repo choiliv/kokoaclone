@@ -7,35 +7,23 @@
         </title>
        <link href="style.css" rel="stylesheet" />
        <style>
+      img {
 
-         :root{
-          --main-color:#fcce00;
-          --default-border: 1px solid var(--main-color);
-        }
-
-        body{
-          height: 1000vh;
-          margin: 20px;
-        }
-       a {
-          background-color:tomato;
-          color: wheat;
-          text-decoration: none;
-          padding: 15px;
-          border-radius: 5px;
-          transition: background-color 3s ease-in-out,
-                      color 3s ease-in-out;
-       }
-       a:hover {
-          background-color:wheat;
-          color:tomato;
-       }
+        height: 300px;
+        width: 300px;
+        border: 5px solid black;
+        border-radius: 50%;
+        transition: transform 5s ease-in-out;
+      }
+     img:hover {
+        transform: rotateZ(90deg);
+     }
 
     </style>
     </head>
     <body>
-     <div>
-      <a href="#">website</a>
-     </div>
+       <img src="img/gosim.jpeg" />
+       <span> 최고심 짱  귀여움!
+      </span>
       </body>
       </html>
