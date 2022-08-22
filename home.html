@@ -7,13 +7,21 @@
         </title>
        <link href="style.css" rel="stylesheet" />
        <style>
+        body {
+          display: flex;
+          justify-content: center;
+        }
 
         @keyframes superGoodCoinFlip {
-          from {
-            transform: rotateX(0);
+          0%{
+            transform: rotateX(0) ;
           }
-          to {
-            transform: rotateX(360deg);
+          50% {
+            transform: rotateX(360deg) translateY(300px) scale(2);
+          }
+
+          100% {
+            transform: rotateX(0) ;
           }
         }
       img {
