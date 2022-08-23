@@ -9,35 +9,35 @@
        <style>
         body {
           display: flex;
+          height: 100vh;
           justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        div{
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+        @media screen and (min-width: 600px) and (max-width: 800px) {
+          div{
+            background-color: wheat;
+          }
+        }
+        span {
+          font-size:36px;
         }
 
-        @keyframes superGoodCoinFlip {
-          0%{
-            transform: rotateX(0) ;
-          }
-          50% {
-            transform: rotateX(360deg) translateY(300px) scale(2);
-          }
-
-          100% {
-            transform: rotateX(0) ;
-          }
+      @media screen and (orientation: landscape) {
+        span{
+          display: none;
         }
-      img {
-
-        height: 300px;
-        width: 300px;
-        border: 5px solid black;
-        border-radius: 50%;
-        animation: superGoodCoinFlip 10s ease-in-out infinite;
       }
-
+  
     </style>
     </head>
     <body>
-       <img src="img/gosim.jpeg" />
-       <span> 최고심 짱  귀여움!
-      </span>
+      <div></div>
+      <span>Please, flip your phone:(</span>
       </body>
       </html>
