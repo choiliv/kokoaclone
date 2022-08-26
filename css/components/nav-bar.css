@@ -24,14 +24,7 @@
      left: 15px;
      bottom: 15px;
     }
-
-    .nav__alarm {
-     background-color: tomato;
-     width: 6px;
-     height: 6px;
-     border-radius: 3px;
-     display: flex;
-     position: absolute;
-     left: 25px;
-     bottom: 30px;
-    }
+.nav__point {
+    top: -15px;
+    right: -5px;
+}
