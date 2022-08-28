@@ -5,7 +5,6 @@
 .user-component__column:first-child {
     display: flex;
     align-items: center;
-    border-top: none;
 }
 
 .user-component__avatar {
