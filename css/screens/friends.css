@@ -28,3 +28,26 @@
      justify-content: space-between;
      color: var(--main-font-color);
  }
+
+
+ @keyframes hideSplashScreen {
+    from {
+        opacity:1;
+    }
+    to { 
+        opacity:0;
+        visibility: hidden;
+    }
+ }
+ #splash-screen {
+    background-color: var(--yellow);
+    position:absolute;
+    height: 100vh; /*100%의미*/
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    font-size: 122px;
+    animation: hideSplashScreen 10s ease-in-out forwards;
+ }
