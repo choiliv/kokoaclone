@@ -76,6 +76,11 @@
     margin-right: 5px;
 }
 
+.message__bubble:hover,
+.message-row__own .message__bubble:hover {
+    background-color: #abc1d1;
+}
+
 .message__info {
     display: flex;
     align-items: flex-end;
@@ -92,12 +97,67 @@
 
 }
 
+@keyframes popAuthorBubble {
+    0%{
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.5;
+      transform: translateY(-20px);
+    }
+    40% {
+        opacity: 0.5;
+        transform: translateY(20px);
+      }
+
+      60% {
+        opacity: 0.5;
+        transform: translateY(-20px);
+      }
+
+    100%{
+        opacity:1;
+
+    }
+}
+.message-row .message__bubble {
+    animation: popAuthorBubble 2s ease-in-out;
+}
+
+@keyframes fadeOwnBubble {
+    0%{
+        opacity: 0;
+
+    }
+    20% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    40% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    60% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+
 .message-row__own .message__bubble {
     background-color: var(--yellow);
     border-top-right-radius: 0px;
     border-top-left-radius: 15px;
     margin-right: 0px;
     margin-left: 5px;
+    animation: fadeOwnBubble 2s ease-in-out ;
+    transition: all 1s ease-in-out;
 }
 
 .message-row__own .message__info {
@@ -181,6 +241,10 @@
 .reply:focus-within button {
     opacity: 0;
     
+}
+
+.reply__column .fa-square-plus:hover {
+    opacity:1;
 }
 
 .reply input:focus {
