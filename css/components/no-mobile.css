@@ -12,15 +12,17 @@
     top: 0;
 
 }
+
+@media screen and (max-width:650px) {
+    #no-mobile {  
+    display: none;
+}
+}
+
+
 @media screen and (orientation: portrait) {
     #no-landscape {
         display: none;
     }
-}
-
-@media screen and (max-width:645px) {
-    #no-mobile {  
-    display: none;
-}
 }
 
